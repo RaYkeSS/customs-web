@@ -1,0 +1,13 @@
+@use './scss/_styles.scss';
+
+
+$primary-color: #333;
+
+body {
+  font: 100% styles.$font-stack;
+  color: #fff;
+  font-size: 60px;
+  background-color: $primary-color;
+  height: 100%;
+  width: 100%;
+}
