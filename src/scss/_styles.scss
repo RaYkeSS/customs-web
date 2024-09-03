@@ -49,3 +49,16 @@
 }
 
 $font-stack: Roboto, system-ui;
+$color-white: #fff;
+
+.container {
+    max-width: 1160px;
+    min-width: 320px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-dark {
+    background-color: #ddd;
+    padding: 140px 0 150px 0;
+}

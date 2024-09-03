@@ -1,0 +1,7 @@
+@use '../../scss/styles';
+
+
+.wrapper {
+    background-color: styles.$color-white;
+    font: 100% styles.$font-stack;
+}
