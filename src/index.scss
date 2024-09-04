@@ -1,0 +1,69 @@
+@use "./scss/colors";
+@use "./scss/constants";
+@import "./scss/reset";
+
+.container {
+  max-width: 1160px;
+  min-width: 320px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.section-dark {
+  background-color: colors.$bg-dark;
+  padding: 140px 0 150px 0;
+}
+
+.btn {
+  padding-block: 16px;
+  font-weight: constants.$fw-prime;
+  font-size: constants.$fz-sm;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: colors.$text-light;
+  border: none;
+  border-radius: 2px;
+  background: colors.$primary;
+}
+
+.link {
+  position: relative;
+  @include constants.transition;
+  &:hover {
+    color: colors.$primary;
+  }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: "";
+    color: currentColor;
+    background: colors.$primary;
+    height: 1px;
+    @include constants.transition($attr: width);
+  }
+  &:hover:after {
+    width: 100%;
+  }
+}
+
+.title {
+  font-weight: constants.$fw-prime;
+  font-size: constants.$fz-title;
+  line-height: 125%;
+  text-align: center;
+  color: colors.$title;
+}
+
+.text {
+  font-weight: constants.$fw-reg;
+  font-size: constants.$fz-main;
+  line-height: 180%;
+  text-align: center;
+  color: colors.$text;
+}

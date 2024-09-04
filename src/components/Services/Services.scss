@@ -1,0 +1,27 @@
+@use "../../scss/constants";
+@use "../../scss/colors";
+
+.services {
+  padding: 265px 0 150px 0;
+}
+
+.services__text {
+  max-width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.services__wrapper {
+  @include constants.flex;
+  gap: constants.$spacing-md;
+}
+
+.services__card {
+  flex-basis: 30%;
+  color: colors.$white;
+  background-color: colors.$primary;
+  .services__caption {
+  }
+  .services__subtext {
+  }
+}

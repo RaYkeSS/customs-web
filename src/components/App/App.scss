@@ -1,7 +1,8 @@
-@use '../../scss/styles';
-
+@use "../../scss/constants";
+@use "../../scss/colors";
 
 .wrapper {
-    background-color: styles.$color-white;
-    font: 100% styles.$font-stack;
+  background-color: colors.$white;
+  font: 100% constants.$font-stack;
+  color: colors.$text;
 }

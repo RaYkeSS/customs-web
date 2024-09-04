@@ -1,0 +1,28 @@
+@use "./_fonts.scss";
+
+$font-stack: fonts.$font-stack;
+$fw-prime: 700;
+$fw-scnd: 300;
+$fw-reg: 400;
+$fw-semibold: 500;
+$fw-extrabold: 900;
+$fz-sm: 14px;
+$fz-main: 16px;
+$fz-caption: 18px;
+$fz-title: 48px;
+
+$spacing-sm: 20px;
+$spacing-md: 30px;
+$spacing-lg: 40px;
+$spacing-card: 27px;
+$header-gap: 73px;
+$nav-gap: 62px;
+
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin transition($attr: color) {
+  transition: $attr 0.4s ease-in-out;
+}

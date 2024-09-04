@@ -1,0 +1,39 @@
+@use "../../scss/constants";
+@use "../../scss/colors";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 18px;
+  background-color: rgba(colors.$bg-dark, 0.7);
+  font-weight: constants.$fw-prime;
+}
+
+.header__container {
+  @include constants.flex;
+  gap: constants.$header-gap;
+  align-items: center;
+}
+
+.nav {
+  @include constants.flex;
+  gap: constants.$nav-gap;
+}
+.nav__item {
+}
+
+.nav__link {
+}
+
+.feedback {
+  @include constants.flex;
+  gap: constants.$spacing-sm;
+  align-items: center;
+}
+.feedback__link {
+}
+
+.feedback__btn {
+}
